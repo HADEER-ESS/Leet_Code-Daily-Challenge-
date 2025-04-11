@@ -1,0 +1,11 @@
+- Difficulty : Easy
+- Topic : Math
+
+- Intuition : 
+    pass through numbers from low -> high which match condition :
+    1- length of number is EVEN.
+    2- the sum of left digits and right digits are same.
+
+- Complexity
+    - Time complexity : O(n*m)
+    - Space complexity : O(1)
