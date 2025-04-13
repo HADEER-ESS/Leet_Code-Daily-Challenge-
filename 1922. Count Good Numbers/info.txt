@@ -1,0 +1,13 @@
+- Difficulty : Medium
+- Topic : Recursion, Math
+
+- Intuition : create calcPower function to get all possible number string with n string length
+- Approach :
+    - in javaScript i need to convert whole number to BigInt to
+        can calculate and MOD them out.
+
+    - in CPP I use long long data type to accept the huge numbers.
+
+- Complexity :
+    -Time complexity : O(log n)
+    - Space complexity : O(1)
