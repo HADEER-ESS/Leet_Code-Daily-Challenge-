@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : Math, Binary Search (B.S)
+
+- Intuition : use binary search between 1 to x
+- Approach :
+    - use B.S start with 1 and end with x
+
+    - calculate mid number by adding start with end and muliply with 2
+
+    - check the following for update :
+        - if mid * mid <= x  AND  mid+1 * mid+1 > x  =>  store the **mid** value.
+        - if mid * mid > x      =>  decrement **end**  value.
+        - else  =>      increment **start** value.
+
+- Complexity :
+    -Time complexity : O(log n)
+    - Space complexity : O(1)
