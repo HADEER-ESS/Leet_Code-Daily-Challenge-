@@ -1,0 +1,20 @@
+- Difficulty : Medium
+- Topic : String
+
+- Intuition : 
+    - loop through numbers from 2 to n.
+    - Run Length Encoding => count + number, to genarate the new string number.
+
+- Approach : 
+    - init with length 1 with value of res => "1"
+    - loop from 2 to n
+    - get the last string to loop through its item and count
+        the number based on run length encoding approuch, andadd to 
+        res string;
+    - return res
+
+- Complexity :
+    -Time complexity : O(n^2)
+    - Space complexity : 
+        - First Solution => O(n)
+        - Second Solution => O(1)
