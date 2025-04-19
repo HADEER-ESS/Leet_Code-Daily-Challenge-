@@ -1,0 +1,15 @@
+- Difficulty : Medium
+- Topic : Array, Two Pointer, Sorting
+
+- Intuition : 
+    - sort array and loop to get the pairs that match requirement
+
+- Approach : 
+    - create two pointer r to start from end and l to start from beginner 
+        and loop to sum the start and end numbers to if they arr greater than 
+        target => reduce r as it the highest value.
+    -otherwise add to cnt answer
+
+- Complexity :
+    -Time complexity : O(n log n)
+    - Space complexity : O(1)
