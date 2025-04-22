@@ -1,0 +1,24 @@
+- Difficulty : Hard
+- Topic : Math, Dynamic Programming, Combinatorics, Number Theory
+
+- Intuition : 
+    - count the ideal array result where 
+        1- from 1 to **maxValue**
+        2- every new number be **divisable** by the previous one.
+
+- Approach : 
+    - to make sure every new number be devisiable by prev =>
+        we add each time the **PREV** value to create **NEXT**
+    - create **map** to mark the last time existance of same **idx** 
+        with same **number** as => MEMORIZATION
+    - count the good array **total** when
+        - reach the end => idx === n
+        - we already pass by those argument
+    - return **total**
+
+- Complexity : (m => for maxValue)
+    -Time complexity : 
+        - First Solution => O(m^n * n)
+        - Second Solution => O(n * m * log(m))
+    - Space complexity : 
+        - First Solution => O(m * n)
