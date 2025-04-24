@@ -1,0 +1,26 @@
+- Difficulty : Medium
+- Topic : Array, Hash Table, Sliding Window
+
+- Intuition : 
+    - count number of subarray can be form, from given array has all array dinstnict integers.
+
+- Approach : 
+    1- count the distict integers in array using **set** and get its size **unique**.
+
+    2- create **mp** Map to count and store the unique values existance.
+
+    3- loop using two pointer **r** and **l** as *SLIDING WINDOW*
+        a- store and count array value in **mp**
+        b- when the size of **mp** equal to **uniques** (at least each item existance once)
+            - => add to **ans** by minus **(len - r)**
+            - => decrement te count of value from left **l**
+            - => if number count in **mp** equal to **zero** remove it from **mp**
+            - => increment **l** value by one
+
+    => # NOTE => when remove item from **mp** its size decreased, so exit while condition loop.
+
+    4- return **ans**
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(n)
