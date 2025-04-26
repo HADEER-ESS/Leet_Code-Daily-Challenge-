@@ -1,0 +1,19 @@
+- Difficulty : Medium
+- Topic : Array, Hash Table, Prefix Sum
+
+- Intuition : 
+    - loop through array to get the output calc (ONE || ZERO) 
+        base on condition using PREFIX SUM.
+
+- Approach : 
+    - create a memorization **mp** to store each number **prefix**, 
+        and store each **sum** is satisfied to condition of **sum** with 
+        modularity is equal to **k**.
+
+    - each time we pass by this **prefix** we add its value to **ans**.
+
+    -return **ans**.
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(n)
