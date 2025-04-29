@@ -1,0 +1,24 @@
+- Difficulty : Medium
+- Topic : Array, Sliding Window
+
+- Intuition : 
+    - count the subarray that has **max** value repeats at least k times.
+
+- Approach : 
+    - get the **max** value in array.
+
+    - create **cnt** variable to count number of **max** value.
+
+    - left **l** and right **r** pointer.
+
+    - use SLIDING WINDOW algorithm to count subarraies:
+        - if the current value equal to **max** increment **cnt**
+        - while **cnt** equal to or greater than **k** count sub-arraies.
+        - to move **l** left pointer we need to check if its current value includes **max** or not to decrement **cnt**.
+        - increment **l** by one.
+
+    - return **res**.
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
