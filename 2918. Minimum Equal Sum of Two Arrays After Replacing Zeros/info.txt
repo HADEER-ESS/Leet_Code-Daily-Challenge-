@@ -2,17 +2,17 @@
 - Topic : Array, Greedy
 
 - Intuition : 
-    - greedy to get the minimum sum of array after replacing all zeros to a positive number
+    - greedy to get the minimum sum of array after replacing all zeros to a positive number.
     - if I replace all zeros with **1** as to get the **minimum equal sum**, and compare the sums of both array with **max**.
 
 - Approach : 
     - loop through **nums1** and **nums2** arrays to sume its value and replace all *zeros* to *ones*.
     - count the number of **zeros** in each array.
-    - get the **maximum** value between **sum1** and **sum2**
+    - get the **maximum** value between **sum1** and **sum2**.
     - create condition :
         - if **sum1** equal to **maximum** or array *nums1* contains **zeros** **AND** **sum2** equal
-          to **maximum** or array *nums2* contain **zeros** => RETURN (maximum)
-        - else  => RETURN (-1)
+          to **maximum** or array *nums2* contain **zeros** => RETURN (maximum).
+        - else  => RETURN (-1).
 
 - Complexity :
     -Time complexity : O(n)
