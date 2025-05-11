@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array
+
+- Intuition : 
+    - count the consecutive odd numbers in array. 
+
+- Approach : 
+    - create **cnt** variable to count the odd
+
+    - loop through array:
+        - if **cnt** reach **3** => return TRUE
+        - if the number is **even** reassign **cnt** to **0**, else increment **cnt** by one
+
+    - return => **cnt** equal to **3**.
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(1)
