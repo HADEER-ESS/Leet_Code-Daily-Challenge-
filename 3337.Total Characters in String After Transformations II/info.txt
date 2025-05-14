@@ -1,0 +1,27 @@
+- Difficulty : Hard
+- Topic : Hash Table, String, Counting, Dynamic Programming, Math
+
+- Intuition : 
+    - get the formed string length.
+    - each character transform to **nums[chr]** characters.
+    - use ASCII for count and update the appearance for each character. 
+
+- Approach : 
+    - create **chars** array where count the appearance for each charcate in given string **s**.
+    - loop **t** times to count each character transformation change.
+    - create **visit** array to update characters count from **chars**, and update **chars** at the end.
+    - increment the count of transformed character based on **nums[ch]** given number
+        - for Example
+            - if 'a' index(0) at **nums[ch]** is 3,
+              so **a** character will be changed to => **bcd** characters.
+            -if 'z' index(25) at **nums[ch]** is 2,
+             so **z** character will be changed to => **ab**
+
+    - sum all **chars** array using **reduce** in *JS*, or **for loop** in *CPP*.
+
+- Complexity :
+    -Time complexity : O(n + t * m) 
+                        - n =>  is the 26 characters.
+                        - t => given **t** times.
+                        - m => the value for charcater in **nums** array
+    - Space complexity :  O(1)
