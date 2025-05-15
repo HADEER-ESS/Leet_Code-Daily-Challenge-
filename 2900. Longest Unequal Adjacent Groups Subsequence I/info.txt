@@ -1,0 +1,15 @@
+- Difficulty : Easy
+- Topic : Greedy, Array, String
+
+- Intuition : 
+    - get the longest subsequance of array that no two adjacent elements are from the same group.
+
+- Approach : 
+    - create **ans** array to store the string every two adjacent elements are from different group.
+    - loop through **groups** array and compare
+        - the group of last item added to **ans** !== new income.
+    - return **ans**
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(1)
