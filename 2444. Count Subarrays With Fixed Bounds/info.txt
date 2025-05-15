@@ -1,0 +1,26 @@
+- Difficulty : Hard
+- Topic : Array, Queue, Sliding Window, Monotomic Queue
+
+- Intuition : 
+    - loop through array to get the count of each subArray that match condition
+
+- Approach : 
+    - create **ans** variable to count
+    - create nested loop outer for **l** and innter for **r**
+        to get all possible subArray the match condition (min value >= minK)(max value <= maxK)
+    - sub array may contain only **one number** when the **minK === maxK**
+    - if we pass by anny number not match above contidion => **break** as it must be contiguous
+
+    - use LAST_MIN, LAST_MAX, LAST_INVALID variables => to store the index of each 
+        (num === minK), (num === maxK), (num < minK || num > maxK)
+        and create comparisone to check if the invaid number locate before the start of valid subArray to calculate
+
+- Complexity :
+    -Time complexity : 
+        - First Solution => O(n^3)
+        - Second Solution => O(n^2)
+        - Third Solution => O(n)
+    - Space complexity : 
+        - First Solution =>  O(n)
+        - Second Solution => O(1)
+        - Thirst Solution => O(1)
