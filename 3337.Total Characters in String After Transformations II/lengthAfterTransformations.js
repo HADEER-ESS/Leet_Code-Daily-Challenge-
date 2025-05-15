@@ -1,7 +1,5 @@
 //Solution #1
 //529 / 536 testcases passed
-
-
 /**
  * @param {string} s
  * @param {number} t
