@@ -1,0 +1,32 @@
+- Difficulty : Medium
+- Topic : Dynamic Programming, Array, String
+
+- Intuition : 
+    - - **one** hamming distance is: 
+    - different between two string is only -1- character count
+    - get the longest subsequance array fo string that match
+        - have same length
+        - have 1 hamming distance
+        - new income item from different group from prev
+
+
+- Approach : 
+    - create a **dp** to collect the latest data
+    - **max** variable to get the longest possible array of string
+    - loop from start and check the **new** element with the all **prev** using a nested loop.
+
+    - quite current loop if the two compared string
+        - with different string length
+        - from same group
+        - don't have only 1 hamming distance.
+
+    - if the length of **outer** **dp** array greater than **inner dp** => SKIP to avoid override the old data with new created data
+    - else => 
+        - assign the **prev** array to **outer dp** (new), and add the new string (**as we take care or string order as mentioned in the probelm).
+        - update **max** with max compared length
+
+    - => at end return the **dp** stored array item with length equal to **max**
+
+- Complexity :
+    -Time complexity : O(n^2)
+    - Space complexity : O(n)
