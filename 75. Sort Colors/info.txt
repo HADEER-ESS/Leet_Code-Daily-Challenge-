@@ -1,0 +1,16 @@
+- Difficulty : Medium
+- Topic : Two Pointer, Sort, Array
+
+- Intuition : 
+    - using counting sort to sort array **nums** inplace
+
+- Approach : 
+    - create **mp** array with the count of all integers (0,1,2)
+    - create two pointer **start** for loop and placing, and **pointer** for getting numbers from **mp** array
+    - loop through nums array using while loop
+    - if the count of *num* in **mp** array reach zero => increment to the next number in order
+    - else => decrement the *num* count and increments **start** pointer.
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(1)
