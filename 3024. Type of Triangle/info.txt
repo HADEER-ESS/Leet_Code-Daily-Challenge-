@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Math, Sorting
+
+- Intuition : 
+    - based on the triangle edge length return the triangle type.
+
+- Approach : 
+    - if all edges length equal => equilateral.
+
+    - if there is 2 edges with same length, + the sum of any two edges **greater than** the third => isosceles.
+
+    - if all edges aren't equal but the sum of any 2 edges greater than the third one => scalene.
+
+    - else => none
+
+- Complexity :
+    - Time complexity : O(1)
+    - Space complexity : O(1)
