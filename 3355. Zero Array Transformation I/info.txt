@@ -1,0 +1,15 @@
+- Difficulty : Medium
+- Topic : Array, Prefix Sum
+
+- Intuition : 
+    - loop through array from start to end from **queries** array and decrement every item within the index by 1.
+    - return if all numbers areequal to **||** lower than 0
+
+- Approach : 
+    - create **diff** array to store the possible differences for each index based on **queries** subset.
+    - use **prefix-sum** instead of nested loop to sum the differences to add to num
+    - return **true** when all numbers can reach 0
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
