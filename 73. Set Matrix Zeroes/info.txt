@@ -1,0 +1,16 @@
+- Difficulty : Medium
+- Topic : Array, Hash Table, Matrix
+
+- Intuition : 
+    - loop through array and get the posistion of cell with value **0** and 
+      set its row and column cells to **zero**.
+
+- Approach : 
+    - loop thtorugh matrix and store the position of zero cell in **zeros** array **[r,c]**
+
+    - traverse through stored **positions** and change every cell share with same **row** or 
+      **column** to zero.
+
+- Complexity :
+    -Time complexity : O(n * m)
+    - Space complexity : O(n)
