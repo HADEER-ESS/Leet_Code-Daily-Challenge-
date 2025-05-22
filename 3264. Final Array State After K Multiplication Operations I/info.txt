@@ -1,0 +1,22 @@
+- Difficulty : Easy
+- Topic : Array, Heap(Priority Queue), Simulation, Math
+
+- Intuition : 
+    - add items as **pair** || **object** {value, index}
+    - sort them or add in a minimum **priority queue**.
+
+- Approach : 
+   - we can make a simulation in javascript to use Array instead of using CODED (Priority-Queue).
+
+    - STEPS:
+        - loop through **nums** to add items in **priority queue**
+        - loop **k** times:
+            - get the first (top) **smallest value** in queue
+            - get its index and multiply its **value** in **nums**
+            - update **priority queue** with the updated value with **same index**.
+
+    - return **nums** again.
+
+- Complexity :
+    -Time complexity : O(n^2)
+    - Space complexity :  O(1)
