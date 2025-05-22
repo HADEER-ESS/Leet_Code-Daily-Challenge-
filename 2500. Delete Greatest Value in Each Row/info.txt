@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : Array, Heap(Priority Queue), Sorting, Simulation, Matrix
+
+- Intuition : 
+    - eliminate the maximum item from every row, each time.
+    - add the max number among them to the **ans**.
+
+- Approach : 
+   - sort every row in **grid**
+    - loop until the *column** count be zero `"as the column decreased ecery time"`
+    - store the **maximum** value from rows, and **pop** in from the *row*
+    - add the maximum value to **ans**
+    - return **ans**
+
+- Complexity :
+    -Time complexity : O(n*m log n)
+    - Space complexity :  O(1)
