@@ -1,0 +1,15 @@
+- Difficulty : Easy
+- Topic : Array, String
+
+- Intuition : 
+    - get the index of every strong **includes** ot **has** the `x` character.
+
+- Approach : 
+    - loop through every string in array
+    - check if the string contains `x` character
+    - add the string index to answer
+    - return **ans**
+
+- Complexity :
+    -Time complexity : O(n^2)
+    - Space complexity : O(1)
