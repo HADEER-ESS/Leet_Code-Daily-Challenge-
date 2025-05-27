@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Dynamic Programming
+
+- Intuition : 
+    - get the minimum cost to reach the end of stairs step.
+    - user can start from index 0 or index 1
+    - user can either, climb 1 step or  2 steps at once.
+- Approach :
+    - if start from step **0** the only cost you had spend is **0** and store it in **dp** as initial value
+    - if start from step **1** the cost you spend is the cost of the **0** indexed step.
+    
+    - using **dp** to get the min value between (the last one step stored **-1** or the last two step stored **-2**) and add the **cost** of the **prev** one
+
+    - return the min between the last step and the last -1
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(1)
