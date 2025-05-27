@@ -1,0 +1,17 @@
+- Difficulty : Medium
+- Topic : Topological Sort, Deapth First Search, Breadth First Search, Graph
+
+- Intuition : 
+    - get th SAFE NODE from graph unidirected node.
+
+- Approach :
+    - create a VISIT array :
+        - 0 => means not visit.
+        - 1 => means visit.
+        - 2 => means safe node => and push it in answer **ans** array.
+    
+    - use DFS to traverse over graph's nodes
+
+- Complexity
+    - Time complexity : O(n + e)
+    - Space complexity : O(n)
