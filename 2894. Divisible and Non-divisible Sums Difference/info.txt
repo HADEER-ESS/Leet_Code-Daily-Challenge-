@@ -1,0 +1,15 @@
+- Difficulty : Easy
+- Topic : Math
+
+- Intuition : 
+    - loop to get the diffeances between the non-divisable **m** sum and divisable **m** sum
+
+- Approach : 
+    - loop from 1 to n
+    - check each number if it is divisable by m or not
+    - sum the number based on its divisable
+    - return the diff between the **non-divisable** sum and **divisable sum**
+
+- Complexity :
+    -Time complexity : O(n)
+    -Space complexity : O(1)
