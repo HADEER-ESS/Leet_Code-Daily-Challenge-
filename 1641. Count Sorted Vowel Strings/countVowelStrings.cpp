@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 class Solution {
 public:
     void solve(int n, int idx, int &res){

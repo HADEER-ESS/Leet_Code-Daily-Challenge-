@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <bitset>
+
+using namespace std;
+
 class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
