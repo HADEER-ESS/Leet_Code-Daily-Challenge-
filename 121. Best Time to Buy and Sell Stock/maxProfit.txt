@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Dynamic Programming
+
+- Intuition : 
+    - get the MAX profit.
+    - need to BUY the product with MIN value
+    - need to SELL the product with MAX value
+- Approach :
+    - store the MIN price while traversing, starting from 0 in price and traverse from 1
+    - using Dynamic Programming to store max profit.
+    - while TRAVERSING : 
+        - get the min price value.
+        - update in **dp** => check if the PREVIOUS profit is greater than the CURRUNT profit (prices[i]-min)
+        - return the last value in **dp** 
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(1)
