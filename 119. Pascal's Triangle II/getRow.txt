@@ -1,0 +1,14 @@
+- Difficulty : Easy
+- Topic : Array, Dynamic Programming
+
+- Intuition : 
+    - store the values of Pascal for every level and use it as a referance for every new one
+- Approach :
+    - get the PASCAL for basic numbers like 0, and 1 to take tham as a referance.
+    - loop from **2** to the target **rowIndex**.
+    - each time to create a new **array** start and end it by **1**.
+    - to get the in between values, sub every TWO PAIRS of previous one as `last[j]+last[j+1]` equation.
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(1)
