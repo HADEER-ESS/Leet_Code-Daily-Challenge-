@@ -1,0 +1,14 @@
+- Difficulty : Easy
+- Topic : Array, Math, Dynamic Programming, Memorization
+
+- Intuition : 
+    - get the tribonnaci for given number.
+- Approach :
+    - store the tribonnaci for BASE-CASE numbers like 0, 1, 2 in **dp**.
+    - loop from 3 to the **n** number
+    - use this equation => dp[curr] = dp[curr-1] + dp[curr-2] + dp[curr-3];
+    - return the stored value at **n**
+
+- Complexity
+    - Time complexity : O(n)
+    - Space complexity : O(1)

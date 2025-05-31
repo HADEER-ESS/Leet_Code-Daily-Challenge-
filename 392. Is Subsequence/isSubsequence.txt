@@ -1,0 +1,15 @@
+- Difficulty : Easy
+- Topic : Two Pointer, String, Dynamic Programming
+
+- Intuition : 
+    - check if **s** string is a `subsequance` of **t** string
+- Approach :
+    - use TWO POINTER approach to check if the all characters in **s** string exist in **t** string in same order.
+    - if **t_pointer** reach to the end and **s_pointer** not yet => means now all characters in **s** string in **t** string => return FALSE;
+    - if the current character of **s** EQUAL to the cuurent chacater of **t** `increment` the two Pointer
+    - other wise, increment **t_pointer** only.
+    - return TRUE.
+
+- Complexity
+    - Time complexity : O(n)
+    - Space complexity : O(1)
