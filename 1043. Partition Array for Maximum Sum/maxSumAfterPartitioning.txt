@@ -1,0 +1,18 @@
+- Difficulty : Medium
+- Topic : Array, Dynamic Programming
+
+- Intuition : 
+    - get the max number within certain partition of size **k**
+    - return the maximum sum of array after update
+- Approach :
+    - create a nested loop
+        - i=> from 1 to the length of **array**
+        - j=> from 1 to the **k**
+    - create a **max** and **maxSum** variable to store every max for certain partition and their SUM.
+    - use this equation in **maxSum** to compare the previous max and add the current partition sum `dp[i - j] + max * j`
+    - store the **maxSum** in **dp** array
+    - return the last **dp** stored item.
+
+- Complexity :
+    -Time complexity : O(n ^ k)
+    - Space complexity : O(1)
