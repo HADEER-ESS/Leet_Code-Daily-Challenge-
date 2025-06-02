@@ -1,0 +1,44 @@
+- Difficulty : Hard
+- Topic : Array, Greedy
+
+- Intuition : 
+    - every children will get at least 1 candy.
+    - update the candy count based on the previous rating for the current rate
+
+- Approach : 
+    - create an **arr** to store the candy count for every child with initial value 1.
+    - loop from => left -> right => to set and update the value for every child
+    - loop from => right -> left => to update value if
+        - 1- the current rate GREATER that the previous rate
+        - 2- the value of **old candy count** is greater than or equal to the current
+    
+    - EXAMPLE:
+        - rate = [1, 0, 2]
+        - arr = [1, 1, 1]
+
+        - 1- left to right :
+            - start from i = 1
+            => rate[i] > rate[i-1] => rate[1] > rate[0] => (0 > 1) => FALSE 
+
+            - i = 2
+            => rate[i] > rate[i-1] => rate[2] > rate[1] => (2 > 0) => TRUE
+            - update the rate[2] by 1
+
+        - arr = [1 , 1 , 2]
+
+        - 2- right to left :
+            - start from i = 1
+            => rate[i] > rate[i + 1] => rate[1] > rate[2] => (0 > 2) => FALSE
+
+            - i = 0
+            => rate[i] > rate[i + 1] => rate[0] > rate[1] => (1 > 0) => TRUE
+            another condition to update is => arr[i+1] >= arr[i] => arr[1] >= arr[0] => (1 , 1) => TRUE
+            - update the rate[0] by 1
+
+        - arr = [2 , 1 , 2]
+
+        - reduce and sum the values in **arr** and return this value.
+
+- Complexity :
+    -Time complexity : O(n)
+    - Space complexity : O(n)
