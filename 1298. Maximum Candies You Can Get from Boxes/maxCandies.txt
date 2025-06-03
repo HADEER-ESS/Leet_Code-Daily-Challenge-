@@ -1,0 +1,24 @@
+- Difficulty : Hard
+- Topic : Array, Breadth-First-Search (BFS), Queue, Graph
+
+- Intuition : 
+    - maximum number of candies can be collected from BOXs
+
+- Approach : 
+    - create a **queue** to store every box step can be taken
+    - create a taged array for **visit** and **hasKey** and **hasBox** to avoid repeatation.
+    - first add to the **queue** the INIT Boxes in `initialBoxes`, and mark them as a **hasBox** and **visit** if STATUS is **1**.
+    - ADD the **candies count** for every box in the **queue** to **ans**
+    - check for if we get a KEY of a BOX, 
+        - => mark if as **hasKey** if not TRUE
+        - => if we don't visit it before, AND we path through this BOX, add it to **queue**
+    
+    - check for if the box CONTAINS another BOXs,
+        - => if we don't pass through it before in **hasBox**
+        - => if we don't **visit** it or the STATUS of it is OPEN, add it to the **queue**
+    
+    - return **ans**
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(n)
