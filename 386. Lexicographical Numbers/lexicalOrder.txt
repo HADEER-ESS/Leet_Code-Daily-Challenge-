@@ -1,0 +1,15 @@
+- Difficulty : Medium
+- Topic : Depth-First Search(DFS), Trie
+
+- Intuition : 
+    - get all possible numbers from 1 to given **n**
+
+- Approach : 
+    - use DFS to get every number from 1 to 9 is like a ROOT and append to
+        another numbers from 1 to 9 also every level like a TREE
+    - create **res** array to store numbers in Lexicographical way
+    - start from 1 to 9 while **created number** is lower than **n**
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
