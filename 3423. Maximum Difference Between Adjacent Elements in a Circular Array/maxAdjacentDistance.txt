@@ -1,0 +1,16 @@
+- Difficulty : Easy
+- Topic : Array
+
+- Intuition : 
+    - get the MAXIMUM ABSOLUTE differance between adjacent elements
+
+- Approach : 
+    - get the size for the array.
+    - loop from 1 to **len + 2**
+    - MOD for every item with **len** to provide a circular effect => `i % len` - `i-1 % len`.
+    - STORE the maximum value in **ans**.
+    - return **ans**
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
