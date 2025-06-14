@@ -1,0 +1,15 @@
+Difficulty : Easy
+Topic : Array, Sorting
+
+Intuition : 
+    - get the PAIRS with the MINIMUM different absolute.
+
+Approach : 
+    - sort the array.
+    - get the **minimum different** between every two adjacent element.
+    - get the **pair** with have the same **minimum difference**, and push in **res**.
+    - return **res**
+
+Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
