@@ -1,0 +1,34 @@
+- Difficulty : Easy
+- Topic : Math, Greedy
+
+- Intuition : 
+    - get the `differance between` MAX number and MIN number can be formed from given number using 0 ~ 9
+
+- Approach : 
+    - convert the given number to **string**.
+    - the MAX number must start with **9**
+    - the MIN number must start with **0**
+
+    - to get MIN number loop from 1 and convert any number match **num[0]** value convert it to **0** and `concate it to **small** variable`
+    - to get MAX number loop from 0,
+        - 1- check if the DIGIT is **9** SKIP `concate it to **large** variable`.
+        - 2- if **target** is EMPTY => store the CURRENT DIGIT, and `concate *9* to **large** variable`
+        - 3- if DIGIT equal to **target** => `concate *9* to **large** variable`
+        - 4- else `concate DIGIT to **large** variable`
+
+    -FOR EXAMPLE
+
+        - num = 785
+            - large = 985
+            - small = 085
+        - ans = 985 - 085 => 900
+
+        - num = 90
+            - large = 99
+            - small = 00
+        - ans = 99 - 00 => 99
+
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
