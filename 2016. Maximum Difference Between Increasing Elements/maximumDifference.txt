@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : Array
+
+- Intuition : 
+    - get the MAXIMUM difference between TWO numbers
+
+- Approach :
+    - start with MIN value at position **0** in Array
+    - loop from **1** to the end of Array with **i**
+    - if the `nums[i] > MIN` => CALCULATE diff and store in **res**
+    - update the MIN value while iterating.
+
+- Complexity :
+    - Time complexity : 
+        - solution #1 => O(n^2)
+        - solution #2 => O(n)
+    - Space complexity : O(1)
