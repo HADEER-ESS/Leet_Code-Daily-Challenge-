@@ -1,0 +1,17 @@
+- Difficulty : Medium
+- Topic : Array, Greedy, Sorting
+
+- Intuition : 
+    - Divide given **array** to 3-length sub arrays.
+    - the differance between any two numbers in array must be SMALLER or EQUAL to **k**.
+
+- Approach : 
+    - sort the given array.
+    - loop through array and increment by 3 everytime to check
+        - if differance between any of ([i] , [i+1] , [i+2]) is GREATER THAN **k** => RETURN []
+        - else push the sub-array to **res** array
+    - RETURN **res**
+
+- Complexity :
+    - Time complexity : O(n log n)
+    - Space complexity : O(n)
