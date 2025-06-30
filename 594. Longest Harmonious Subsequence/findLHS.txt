@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Hash Table, Sliding Window, Sorting, Counting
+
+- Intuition : 
+    - get the longest harmonious subsequence in given array
+
+- Approach : 
+    - get the count of each number appearance store in **map** in `[value, count] pair`
+    - loop through the **map** and check:
+        - if the **value + 1** exist in the array =>
+            - => sum the **value ** count and **value +1**
+            - => get the max between **res** and the **sum**
+    
+    -return **res**
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(n)
