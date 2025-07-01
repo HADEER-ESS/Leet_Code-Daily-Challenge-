@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic :  String
+
+- Intuition : 
+    - count the consecutive characters in string.
+
+- Approach : 
+    - create a marker **chr** equal to the first character in string
+    - define **res** with init value 1
+    - loop through the string:
+        - if the current character equal to marker **chr** increment **res** by one
+        - otherwise, update marker **chr** with the currenct character.
+    - return **res**
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
