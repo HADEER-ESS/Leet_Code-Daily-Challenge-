@@ -1,0 +1,15 @@
+- Difficulty : Easy
+- Topic : Array, Hash Table, Counting
+
+- Intuition : 
+    - return the max number where its value and its frequency in array are the same or -1
+
+- Approach : 
+    - loop through the given array and count each number frequency using **map / hash table**
+    - loop through **mp** and check of the [key, value] have same value,
+    - assign a max value to **res**
+    - return **res**
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
