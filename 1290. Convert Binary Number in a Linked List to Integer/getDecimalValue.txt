@@ -1,0 +1,13 @@
+- Difficulty : Easy
+- Topic : Linked List, Math
+
+- Intuition : 
+    - get the output number from result binary string to integer number
+
+- Approach : 
+    - loop through List and **concate** number to **str** string
+    - convert **str** binary string to Integer using (stoi) || (parseInt)
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
