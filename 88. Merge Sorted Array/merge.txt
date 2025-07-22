@@ -1,0 +1,12 @@
+Topic : Array, Two Pointer, String
+
+Intuition:
+    - return the merged result from nums1 and nums2, after sort them in Ascending order
+
+Approach:
+    - replace all zeros from nums1 to the integers in nums2
+    - sort the nums1 array
+
+
+Time Complexity : O(n log n)
+Space Complexity : O(1)
