@@ -1,0 +1,19 @@
+- Difficulty : Easy
+- Topic : String, Hash Table, Counting
+
+- Intuition : 
+    - get each character frequency
+    - separate between Vowels and Consonant
+    - get MAX freq
+    - sum and return
+
+- Approach : 
+    - loop through string s
+    - get each character index in stored array count
+    - check if the Character is VOWEL => get the max count
+    - else => get the max count using MAX method
+    - return the sum between them
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
