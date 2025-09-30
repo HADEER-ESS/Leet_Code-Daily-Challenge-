@@ -1,0 +1,26 @@
+- Difficulty : Medium
+- Topic : Array, Dynamic Programming
+
+- Intuition : 
+    -get th minimum sum of every possible triangle's weight can be form in the given polygon.
+
+- Approach : 
+    - create 2D array to store the weigh of each triangle with (i,j,k) vertex staring value 0.
+
+    - loop from SIZE 3 (each triangle must contain only 3 vertex)
+
+    - the start point i is 0 and end with LENGTH-size to prevent j (end vertex) to be out of scope.
+
+    - calculate J
+
+    - loop with k to be in the MIDDLE between i and j point
+
+    - calculate the SUM of all possible TRIANGLES
+
+    - store the MIN value.
+
+    - return the MIN value.
+
+- Complexity :
+    - Time complexity : O(n^3)
+    - Space complexity : O(n^2)
