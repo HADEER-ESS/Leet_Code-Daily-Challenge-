@@ -1,0 +1,20 @@
+- Difficulty : Easy
+- Topic : Math, Simulation
+
+- Intuition : 
+    - continue measure the number of possible bottles tell the TOTAL become LESS THAN exchange number
+
+- Approach : 
+    - make the init VALUE equale to number of bottles
+
+    - measure till the bottles become un-EXCHANGABLE
+
+    - increment the ANS by the NUMBER of BOTTLE can be exchange from total by `total / exchange`
+
+    - change the number of TOTAL by the new exchangable bottles, and the REMAIN BOTTLES from EVERY EXCHANGE.
+
+    return ans.
+
+- Complexity :
+    - Time complexity : O(log n)
+    - Space complexity : O(1)
