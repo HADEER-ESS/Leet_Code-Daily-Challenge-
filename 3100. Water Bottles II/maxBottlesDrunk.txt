@@ -1,0 +1,20 @@
+- Difficulty : Medium
+- Topic : Math, Simulation
+
+- Intuition : 
+    - get the MAXIMUM number of bottle can be exchange
+    - after every exchange operation, will increment EXCHANGE number by one 
+
+- Approach : 
+    - start the ANS to be equal to NUM 
+    - do the equation till `NUM < EXCHANGE`
+    - decrement the num of EXCHANGE every Time
+    - increment NUM by one (as the exchanged one will be empty then)
+    - increment EXCHANGE
+    - increment ANS
+
+    - return ANS
+
+- Complexity :
+    -Time complexity : O(log n)
+    - Space complexity : O(1)
