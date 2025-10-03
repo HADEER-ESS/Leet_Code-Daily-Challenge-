@@ -1,0 +1,29 @@
+- Difficulty : Hard
+- Topic : Math, String, Sort
+
+- Intuition : 
+    - return the smllest lexicographically string
+    - lexicographically string: the small ASCII character value exist at the beginning of string
+
+- Approach : 
+    -  TWO options to consider
+        - 1. k = 1, we can only rotate the string, so we need to find the lexicographically smallest rotation
+        - 2. k > 1, we can sort the string, so we just return the sorted string
+    
+    - K == 1:
+        - store th current string
+        - check for all posibilities by loop
+        - move the first character to the end of string
+        - compare to check the new REV string and STORE string
+        - reassign to the SMALLEST one
+
+        - return STORE
+
+    - K > 1
+        - sort the string
+        - return the sorted string.
+
+
+- Complexity :
+    - Time complexity : O(n^2)
+    - Space complexity : O(n)
