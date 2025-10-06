@@ -1,0 +1,22 @@
+- Difficulty : Hard
+- Topic : Array, Greedy
+
+- Intuition : 
+    - cover the range from 1 to **n**
+    - we can use given number from array **nums** or patch new numbers to cover the RANGE
+
+- Approach : 
+    -  start the **miss** value by 1 (as it is the minimum value can be cover)
+    - make comparison while **miss** is SMALLER or EQUAL to given **n**
+    - if `miss > nums[idx]` so => the given number in **nums** cover the range
+        - increment idx
+        - update miss value by adding the LAST NUMS to it, to check the LARGEST cover number
+    - else => there is the MISSING number need to be patch,
+        - increment PATCH value
+        - update miss to update the range of number can be covered when adding MISS value to nums, by doubling it `miss *= 2` 
+
+    - return PATCH
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
