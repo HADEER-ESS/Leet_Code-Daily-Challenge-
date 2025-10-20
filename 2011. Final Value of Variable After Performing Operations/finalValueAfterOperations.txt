@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : Array, String, Simulation
+
+- Intuition : 
+    - make operations (+ || -) on X value, and return the value
+- Approach :
+    - initial X value by 0
+
+    - loop through the given array
+
+    - apply operation
+
+    - return the value
+
+- Complexity
+    - Time complexity : O(n)
+    - Space complexity : O(1)
