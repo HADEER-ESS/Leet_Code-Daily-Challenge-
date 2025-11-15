@@ -1,0 +1,23 @@
+- Difficulty : Medium
+- Topic : Two Pointer, Sort, Array, Binary Search
+
+- Intuition : 
+    - sort the array
+    - fix one iteration to get the TRIPLE
+
+- Approach : 
+    - fix **i** iteration `from 0 to length -1`
+    - SKIP the doublication from the outer iterations **i** by checking the new number EQUAL to the previous one => SKIP
+    - create the TWO Pointer
+    - iterate inside the POINTER range
+        - calculate the SUM
+        - if SUM > 0 => positive number is large => `right--` move backward
+        - if SUM < 0 => negative number is small => `left++` move forward
+        - else => push the TRIPLE to ANS
+            - SKIP the doublication for LEFT and RIGHT pointers
+
+    - retusn ANS
+
+- Complexity :
+    - Time complexity : O(n^2)
+    - Space complexity : O(n^2)
