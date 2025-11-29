@@ -1,0 +1,17 @@
+- Difficulty : Medium
+- Topic : Two Pointer, Math, Brianteaser
+
+- Intuition : 
+    - check if the given number is PALINDROM to base 2 -> n-2
+
+- Approach : 
+    - iterate from 2 to n-2 using `i`
+    - convert the number everytime to base `i`
+    - get the reverse of each `OR` check using handler function `checkPalindromd` in CPP
+    - if it gives NON-PALINDROM to any base => RETURN false
+
+    -else => RETURN true
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
