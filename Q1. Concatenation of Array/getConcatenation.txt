@@ -1,0 +1,16 @@
+- Difficulty : Easy
+- Topic : Array, simulation
+
+- Intuition : 
+    - douplicate the array in a new array and return it
+
+- Approach : 
+    - get the length of the array
+    - loop through first array by its length **len**
+    - assign every **i** and **i+len** with the **nums** array value
+
+    - return the new array
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)

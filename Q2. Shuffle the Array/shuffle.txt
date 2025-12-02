@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : Array, Suffle
+
+- Intuition : 
+    - given array include (x, y) values in order [x, x, x, y, y, y]
+    - alternate between X and Y values in array  [x, y, x, y, x, y]
+
+- Approach : 
+    - create a new array **ans**
+    - loop through 0 -> n
+    - each time push `nums[i] and nums[i+n]`
+
+    - return **ans**
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)

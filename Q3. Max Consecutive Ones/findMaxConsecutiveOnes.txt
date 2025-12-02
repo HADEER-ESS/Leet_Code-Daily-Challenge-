@@ -1,0 +1,19 @@
+- Difficulty : Easy
+- Topic : Array, Count 
+
+- Intuition : 
+    - get the MAX number of consecutive ONES
+
+- Approach : 
+    - loop through array
+
+    - when Find any number NOT 1
+        - update max value
+        - reassign the cnt value to 0
+    - else increment cnt value
+
+    - return the MAX value between cnt and max
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
