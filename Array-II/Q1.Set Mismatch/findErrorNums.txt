@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Sorting, Hash Table
+
+- Intuition : 
+    - get the DOUBLICATED and the MISSED item from array
+
+- Approach : 
+    - sort the given array
+    - get the length of array
+    - will iterate from 1 => length
+    - get the Doublicated item from array where `nums[i] === num[i+1]`
+    - get the Missed item from array by CHECKING the existance of each from `1 => LEN`
+
+    - return the TWO integers
+
+- Complexity :
+    - Time complexity : O(n log n)
+    - Space complexity : O(1)
