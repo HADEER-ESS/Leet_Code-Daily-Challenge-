@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : Array, Hash Table, Sorting
+
+- Intuition : 
+    - loop though array and count the number of integers that SMALLER than current NUM
+
+- Approach : 
+    - create ANS array to sort the count
+    - create a NESTED LOOP (i, j)
+    - **count** the number of integers that SMALLER than current
+    - PUSH **count** to the ANS array
+
+    - return ANS
+
+- Complexity :
+    - Time complexity : O(n log n) || O(n^2)
+    - Space complexity : O(1)
