@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Hash Table
+
+- Intuition : 
+    - find the disappeared numbers from given array
+
+- Approach : 
+    - get the array size
+    - create ANS array to store missed INTEGERS
+    - store UNIQUE values in SET
+    - loop from 1 -> length
+    - if INTEGER doesn't exist in SET => PUSH to array
+
+    - return ANS array
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
