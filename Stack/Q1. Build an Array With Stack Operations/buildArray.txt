@@ -1,0 +1,20 @@
+- Difficulty : Medium
+- Topic : Array, Stack , Simulation
+
+- Intuition : 
+    - get the operation happened on given ARRAY to get this result
+    - will iterate from 1 to  `LAST INTEGER in array or n (the smallest)`
+
+- Approach : 
+    - identify the last item in iteration `iterate`
+    - create array to store operation action name `ans`
+    - loop from 1 -> `iterate`
+    - check :
+        - if integer INCLUDES in array => add "Push" to `ans`
+        - if integer NOT INCLUDES in array => add "Push" then "POP" to `ans`
+
+    - return  `ans`
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
