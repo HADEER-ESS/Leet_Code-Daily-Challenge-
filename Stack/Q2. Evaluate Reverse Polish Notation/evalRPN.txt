@@ -1,0 +1,18 @@
+- Difficulty : Medium
+- Topic : Stack, Array
+
+- Intuition : 
+    - get the result number after applying the operations
+    - truncates toward zero.
+
+
+- Approach : 
+    - create a stack to store the Integers value from given array STK
+    - when facing OPERATION STRING, apply the operation on the `last two integers in STK`
+    - push the RESULT INTEGER to the stack STK
+    
+    - return the value in stack `STK[0]`
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
