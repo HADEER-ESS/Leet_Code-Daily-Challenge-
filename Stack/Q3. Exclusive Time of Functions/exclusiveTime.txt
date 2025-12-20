@@ -1,0 +1,19 @@
+- Difficulty : Medium
+- Topic : Stack, Array
+
+- Intuition : 
+    - calculate the time each calculation with unique ID take
+
+
+- Approach : 
+    - create stack STK to push ID for every START TIME for calculation.
+    - create array ANS array to store the time consumption for each.
+    - loop through given LOGS
+        - if the operation name is START => push id in STK, update LAST TIME, calculate TAKEN time (curr - prev) `if not the first calculation`
+        - if the operation name is END   => pop id from STK, update LAST TIME, calculate TAKEN time (curr - prev + 1)
+
+    - return ANS
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
