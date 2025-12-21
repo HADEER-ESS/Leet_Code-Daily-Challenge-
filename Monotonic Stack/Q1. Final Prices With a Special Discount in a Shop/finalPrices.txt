@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Stack, Array, Monotonic Stack
+
+- Intuition : 
+    - apply the discount (minimum index) to current PRICE 
+
+
+- Approach : 
+    - Two Solutions
+        - 1- create nested loop outer i(0 -> len-1), inner j(i+1 -> len)    => O(n^2)
+            - check `prices[j] <= prices[i]` so apply the discount and BREAK
+        - 2- use Monotonic Stack, by pushing items in stack 
+            - check `stack[top] <= current item` so apply the discount
+            - else POP the item from stack 
+
+- Complexity :
+    - Time complexity  : O(n^2) && O(n)
+    - Space complexity : O(1)   && O(n)
