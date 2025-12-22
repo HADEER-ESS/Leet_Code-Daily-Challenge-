@@ -1,0 +1,24 @@
+- Difficulty : Medium
+- Topic : Stack, Array, Monotonic Stack
+
+- Intuition : 
+    - count the DAYS for each Temp item till reach the Greater one
+
+
+- Approach : 
+    - create ANS array to set the count for each day start with ZEROS
+    - create STK stack to store the latest TEMP index, and PT pointer for iteration
+    - loop through array till PT be 0
+    - is the STK is empty, so it is the LAST TEMP `nothing else wil compare` 
+        - push TEMP index in STK, and move forward
+    - is the STK not empty, compare the LATEST TEMP by its index with CURR TEMP
+        - IF GREATER    =>  update ANS by index (PT) `latest temp index - current index (pt)`
+                        =>  push new TEMP index to STK
+                        => move forward
+        - IF NOT        => remove the TEMP index from STK
+    
+    - return ANS
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
