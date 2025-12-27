@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Queue, Count, Simpulation, Stack
+
+- Intuition : 
+    - count number of students, who unable to but their favorite sandwiches.
+
+
+- Approach : 
+    - create UNABLE variable to count the number of student can't buy sandwiches
+    - loop through array UNTIL the STUDENT array becomes empty
+    - if item in STUDENT array and SANDWICHES array have same if => ERASE
+    - else => ERASE from start and PUSH at end, till UNABLE value match the CURRENT student length.
+
+    - return UNABLE
+
+- Complexity :
+    - Time complexity  : O(n^2)
+    - Space complexity : O(1)
