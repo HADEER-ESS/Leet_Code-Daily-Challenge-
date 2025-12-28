@@ -1,0 +1,20 @@
+- Difficulty : Easy
+- Topic : Array, Queue, Count, Simpulation
+
+- Intuition : 
+    - count number of seconds take to make person at index K to buy all the tickets he needs
+    - can buy a ticket every time, then go to the end of QUEUE
+    - buy ticket take 1 second
+
+
+- Approach : 
+    - create CNT variavle that count number of SEC need to make kth person buy his ticket
+    - loop through Array
+    - if the i <= k     }=> add the MIN between the current i's person and k's person ticket
+    - else              }=> add the MIN between the current i's person and k's person ticket -1 (as i locate after k, so k will be finish first)
+
+    - return CNT
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
