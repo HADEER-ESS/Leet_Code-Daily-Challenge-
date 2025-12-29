@@ -1,0 +1,14 @@
+- Difficulty : Easy
+- Topic : Array, Queue, System Design, Simpulation
+
+- Intuition : 
+    - create a Queue system design
+
+
+- Approach : 
+    - implement the QUEUE class with some methods (pop, push, peek, empty)
+    - use Array to simulate the QUEUE functionality
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
