@@ -1,0 +1,29 @@
+- Difficulty : Easy
+- Topic : Array, Heap(Priority Queue), Sorting
+
+- Intuition : 
+    - get the weight of last stone stand after smashing them in Descending order
+
+
+- Approach : 
+    - C++
+        - create a PRIORITY QUEUE where the stones value will be sorted in Descending order automatically
+        - loop through the QUEUE, by getting (pop) the FIRST two stones each time, and smash them together to get value
+        - push the RESULT smash if EXIST
+        
+        - return the FIRST result in QUEUE or ZERO if length === 0
+
+    - JavaScript
+        - sort the Array in Ascending order
+        - ge the Last TWO stone value using POP method, and smash them together to get value
+        - push the RESULT of smash if EXIST
+
+        - return the FIRST result in ARRAY or ZERO if length === 0
+
+- Complexity :
+    - Time complexity  : 
+        - FIRST:   O(n log n) 
+        - SECOND:  O(n^2 log n)
+    - Space complexity : 
+        - FIRST:   O(n)  
+        - SECOND:  O(1)
