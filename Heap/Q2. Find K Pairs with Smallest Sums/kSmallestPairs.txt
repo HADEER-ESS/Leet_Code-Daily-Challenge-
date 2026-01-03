@@ -1,0 +1,20 @@
+- Difficulty : Medium
+- Topic : Array, Heap(Priority Queue), Sorting
+
+- Intuition : 
+    - get the k PAIR that make the MINIMUM sum
+
+
+- Approach : 
+    - create res array to store the PAIRS
+    - use PRIORITY_QUEUE to sort the PAIR ascendingly by sum
+    - start to sum from NUMS1 array and CONSTANT int (0) from NUMS2 array `[sum (nums1[i]+nums2[j]) , i (incremented) , j (0)]` and push in QUEUE
+    - LOOP through the create QUEUE, and get the FIRST item each Time 
+    - start adding the integers from NUMS2 start from sorted j `[sum (nums1[i]+nums2[j]) , i (as passed) , j (incremented)]` to take all possibles
+    - PUSH the value in QUEUE to be sorted
+
+    - return the res
+
+- Complexity :
+    - Time complexity  :    O(n log n) 
+    - Space complexity :    O(n)  
