@@ -1,0 +1,23 @@
+- Difficulty : Hard
+- Topic : Array, Heap(Priority Queue), Math
+
+- Intuition : 
+    - Check of given list can be formed from an ARRAY of 1 with the same length.
+    - Solve this problem from the end to the begin by check if te GIVEN values can be reach to 1's
+
+- Approach : 
+    - use Max_Priority_Queue (pq) to make the MAX value always in the top of the list
+    - calculate the TOTAL of all values in the list
+    - Loop through QUEUE, by taking the MAX value each time
+        - calculate the REMAIN (rest) value by `total - max`
+        - THERE is THREE CONDITION TO TERMINATE
+            - #1 REMAIN and MAX values equal to 1 => so all values becomes 1 (returned to origin) => TRUE
+            - #2 REMAIN is 0 and the MAX value is smaller than REMAIN => so MAX can not be formed from the rest of VALUES => FALSE
+        - Get the MOD for MAX and REMAIN `max % remain`, it represent the ORIGINAL value of Array `[1,1,1,1,1]` 
+            - #3 Check if the MOD equal to 0 => so it can not form the ORIGINAL array => FALSE
+        - Push the MOD value to QUEUE to get the PREVIOUS STEP from NUMBER to form the ORIGINAL arrat
+        - Recalculate the TOTAL.
+
+- Complexity :
+    - Time complexity  :    O(n log n) 
+    - Space complexity :    O(n)  
