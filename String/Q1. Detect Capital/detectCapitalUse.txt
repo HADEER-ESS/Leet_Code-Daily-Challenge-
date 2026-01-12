@@ -1,0 +1,23 @@
+- Difficulty : Easy
+- Topic : String
+
+- Intuition : 
+    - return TRUE if the given word is RIGHT
+
+
+- Approach : 
+    - Define TWO variables CNT `to count the CAPITAL character` and pos `to get the last position of CAPITAL character`
+    - Loop thriugh the WORD and check if the CURRENT character is CAPITAL character
+        - increment CNT
+        - update POS to the CURRENT position
+
+    - return TRUE in THREE conditions
+        - #1 CNT equal to the LENGTH of given word => means ALL characters are CAPITAL
+        - #2 CNT equal to 0                        => means NO character is CAPITAL
+        - #3 CNT equal to 1 and POS equal to 0     => means there is ONE CAPITAL character at the BEGINNING of word
+        
+    - otherwise return FALSE
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
