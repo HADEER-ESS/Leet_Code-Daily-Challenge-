@@ -1,0 +1,16 @@
+- Difficulty : Easy
+- Topic : Array, Math, Geometry
+
+- Intuition : 
+    - calculate the MINIMUM time to take to reach each point in-order
+
+- Approach : 
+    - loop throught the given POINTS array
+    - get the MAX differant between each two points (x,y)``X1 - X2` and `Y1-Y2``
+    - add the MAX to the ans
+
+    - return ans
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
