@@ -1,0 +1,23 @@
+- Difficulty : Easy
+- Topic : String
+
+- Intuition : 
+    - reform the given string to make each sub-string with length K in UPPERCASE
+
+
+- Approach : 
+    - get the Length of given string without DASHES
+    - create **ans** variable to store the new FORMED string
+    - count number of sub-string can be formed with K length `cnt = len / k`
+    - count the length of BEGING sub-string     `rest = len % k`
+    
+    - form the first section using `SUBSTRING` method from 0 to  **rest**
+    - create WHILE loop to get every SECTION started with "-" dash
+    - add eachtime a SubString from FORMED STRING, from **rest** to **rest+k**
+    - increment the **rest** value by K each time and decremenet **cnt** value to reach the end
+
+    - return **ans**
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
