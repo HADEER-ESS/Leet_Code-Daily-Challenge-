@@ -1,0 +1,24 @@
+- Difficulty : Medium
+- Topic : String, 
+
+- Intuition : 
+    - check if given string is Phone Number or EMAIL, and apply the MASK on it
+
+
+- Approach : 
+    - Check if the given S is Number
+        - get the Number section of String
+        - get the length of PHONE Number
+        - apply the MASK based on LENGTH, with VISIABLE the last 4 NUNBERS
+
+    - Check if the given S is Email
+        - lowerCase the first CHARACTER
+        - add `*****`
+        - lowerCase the last character BEFORE `@`
+        - lowercase the REMAIN STRING from `@` to the end
+    
+    - Return ans
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
