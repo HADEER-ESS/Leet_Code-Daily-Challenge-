@@ -1,0 +1,19 @@
+- Difficulty : Easy
+- Topic : String Matching, Sub-string, Repeat
+
+- Intuition : 
+    - Check if the Given String have a repeated Sub-String or not
+
+- Approach : 
+    - get the MID of the string
+    - loop through string from `1->mid`
+    - get the Sub-String each time FROM 0 TO i
+    - CALCULATE the assumed REPEATED time for the Sub-String by `String Length / Sub-String Length` = X
+    - check if the X repeated time for Sub-String form the given Sting
+        - YES       =>      return TRUE
+
+    - return FALSE
+
+- Complexity :
+    - Time complexity  : O(n^2)
+    - Space complexity : O(n)
