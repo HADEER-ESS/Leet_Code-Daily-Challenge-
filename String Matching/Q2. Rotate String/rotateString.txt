@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : String, String Matching
+
+- Intuition : 
+    - Check if the given string S can form GOAL string when ROTATE it
+
+- Approach : 
+    - start from `idx = 0`
+    - loop till reach the end of string
+    - reverse n `incremently each time` character to SWITCH each time in string using `substring` method
+    - check if the NEW SWITCHED STRING equal to the GOAL => return TRUE
+    - other-wise increase the `idx` value
+
+    - at the end return FALSE
+
+- Complexity :
+    - Time complexity  : O(n^2)
+    - Space complexity : O(n)
