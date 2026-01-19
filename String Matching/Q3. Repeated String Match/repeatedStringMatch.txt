@@ -1,0 +1,15 @@
+- Difficulty : Medium
+- Topic : String, String Matching
+
+- Intuition : 
+    - check if B string is a substring of A after repeat it X times
+
+- Approach : 
+    - Repeate string A X's times in `STR`, till the Length of the new Repeated string Extend of become equal to B string Length
+    - check if string B becomes a SUBSTRING of the new Repeated String `STR` 
+    - if yes        =>  return X
+    - if no         =>  Repeate again and CHECK to return X or -1
+
+- Complexity :
+    - Time complexity  : O(a*b)
+    - Space complexity : O(n)
