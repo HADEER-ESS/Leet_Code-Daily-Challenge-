@@ -1,0 +1,19 @@
+- Difficulty : Easy
+- Topic : Linked List
+
+- Intuition : 
+    - delete doublicated node value from given list
+
+
+- Approach : 
+    - loop through the given list
+    - check if the CURRENT node value EQUAL to the NEXT NODE value  `list.val === list.next.val` 
+        - SKIP the NEXT NODE, but link the CURRENT node to the NEXT-> NEXT node `list.next = list.next.next`
+
+    - else => make it Link normally to the NEXT node `list = list.next`
+
+    - return the HEAD.
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
