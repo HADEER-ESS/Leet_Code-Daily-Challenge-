@@ -1,0 +1,32 @@
+- Difficulty : Medium
+- Topic : Linked List
+
+- Intuition : 
+    - Reorder the given linst by making the EVEN indexed NODE next to EACHOTHER then the ODD indexed NODES
+    - `[3 -> 4 -> 2 -> 1 -> 6]`
+    - EVEN INDEXED NODES (at index 0,2,....) `[3 -> 2 -> 6]`
+    - ODD INDEXED NODES  (ad index 1,3,....) `[4 -> 1]`
+    - JOIN together `[3 -> 2 -> 6 -> 4 -> 1]`
+
+
+- Approach : 
+    - create TWO LISTNODE (LINKEDLIST) for ODD `oddList` and EVEN `evenList` indexed nodes
+    - create a POINTER for each LIST for iteration `odd` and `even`
+    - create a CURR list `list` for given LIST iteration
+    - create a `start = 0` indexed pointer to represent the ODD and EVEN index
+    - loop through `list` while it has NODE
+        - if `start` is ODD  => update `odd` list by assigning it to list `odd.next = list`
+                             => mode forward `odd = odd.next`
+        - if `start` is EVEN => update `even` list by assigning it to list `even.next = list`
+                             => mode forward `even = even.next`
+    - update `list` and `start` by move forward
+
+    - Trunckate the ODD list by make it point to NULL `odd.next = null`
+    - we will have the TWO list start with 0 values
+    - make EVEN list point to the ODDList by SKIPPING the first 0'value node   `even.next = oddList.next`
+
+    - return the `evenList` after SKIPPING its leading 0'value node `evenList.next`
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
