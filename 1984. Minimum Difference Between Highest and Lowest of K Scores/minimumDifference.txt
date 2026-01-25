@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Sorting, Sliding Window
+
+- Intuition : 
+    - get the MINIMUM different between MAX, and MIN value in k's integers from given array
+
+- Approach :
+    - sort the given array DESCENDINGLY
+    - create ANS value to store the MINIMUM differences
+    - Make i begin of k's length subarray `i=0` and j end of k's length subarray `j=k-1`
+    - loop through array till j reach the end of Array `j < nums.elngth`
+    - calculate the difference each time `nums[i]-nums[j]`
+
+    - return ANS
+
+- Complexity :
+    - Time complexity  : O(n log n)
+    - Space complexity : O(1)
