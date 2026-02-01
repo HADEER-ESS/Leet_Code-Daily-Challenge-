@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Array, Greedy, Sorting
+
+- Intuition : 
+    - get the minimum COST for THREE subarray formed from given array
+
+- Approach : 
+    - always take the first INTEGER of array as the FIRST formed sub-array
+    - sort the rest of array ascendingly, to get the LOWEST cost for sub-array can be formed
+    - `sub = nums.slice(1)`
+    - `sub.sort()`
+    - take the first TWO items from SUB sorted array
+    - return SUM `nums[0] + sub[0] + sub[1]`
+
+
+- Complexity :
+    - Time complexity : O(n log n)
+    - Space complexity : O(n)
