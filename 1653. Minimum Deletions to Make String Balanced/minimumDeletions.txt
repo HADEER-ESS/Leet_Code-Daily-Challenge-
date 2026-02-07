@@ -1,0 +1,18 @@
+- Difficulty : Medium
+- Topic : String, Stack, Greedy
+
+- Intuition : 
+    - make the string Start with "A" then "B"
+
+- Approach : 
+    - create a `b_cnt` variable to count the number of "B" before or within "A" exist
+    - loop through the given string
+    - if the character equal to B => increment the `b_cnt`
+    - if the character equal to A => check the COUNT of `b_cnt` if it GREATER than 0
+        - increment ANS (as we will remove it)
+        - decrement the `b_cnt` value
+    - return ANS
+
+- Complexity :
+    - Time complexity : O(n)
+    - Space complexity : O(1)
