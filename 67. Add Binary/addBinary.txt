@@ -1,0 +1,16 @@
+- Difficulty : Easy
+- Topic : String, Math, Bit Manipulation
+
+- Intuition : 
+    - get the sum of two given Binary String
+
+- Approach :
+    - convert the both Binary String into NUMBERS
+    - sum the NUMBERS
+    - convert the SUM to Binary String
+
+    - return RES
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
