@@ -1,0 +1,26 @@
+- Difficulty : Easy
+- Topic : Array, BackTracking, Recursion
+
+- Intuition : 
+    - from given available HOURS and MINUTES get the time when number of LED is ON
+
+- Approach : 
+    - create an array for HOURS   = [1, 2, 4, 8]            //len = 4
+    - create an array for MINUTES = [1, 2, 4, 8, 16, 32]    //len = 6
+    - create an ANS array
+    - use a Handler Recursion Function passed the TOTAL-LED, that be decremented each time signing to USED-LED
+
+    - `createTime(turnedOn, idx, hour, minute)`
+    - check at the beginning of function if hours reach `11` or if minuest reach `59`
+    - check if the turnedOn reach `0` so we formed a TIME with avaialble LED count, and push to ANS
+    - otherwise Loop starting from IDX till `10` which the Total Length of BOTH array 
+
+    - if current idx `i` is LESS than 4 => so we can take from HOURS first
+    - else => take from MINUTES
+    - recall the helperFunction with new values `createTime(turnedOn-1, i+1, currHr, currMin)`
+
+    - return ANS
+
+- Complexity :
+    - Time complexity : O(1)
+    - Space complexity : O(1)
