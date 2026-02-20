@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : String, Bit Manipulation
+
+- Intuition : 
+    - check if there is adjacent equal BITS
+
+- Approach : 
+    - convert the given Number into Binary-String using Method
+        - JS => `number.toString(2)` & C++ => `bitset<32>(number).to_string()`
+    - loop through the Binary-String and check
+        - if there is Adjacent Bits Equal => FALSE
+        
+    - TRUE
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
