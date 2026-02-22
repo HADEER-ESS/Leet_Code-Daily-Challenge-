@@ -1,0 +1,23 @@
+- Difficulty : Easy
+- Topic : Binary String, Bit Manipulation
+
+- Intuition : 
+    - get the MAX gap between every '1' bit
+
+- Approach : 
+    - convert the given integer into Binary-String
+    - get the FIRST '1' bit in string
+    - start `idx` from FIRST+1
+    - loop through the given string till reach the LENGTH of binary-string
+    - check if current item is '0' => SKIP `increment the idx by 1`
+    - else :
+        => MEASURE the distance
+        => store the max in ANS `ans = Math.max(ans, idx-first)`
+        => update FIRST `first = idx`
+        => update the iterator `idx++`
+    
+    - return ANS
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
