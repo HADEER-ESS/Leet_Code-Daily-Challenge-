@@ -1,0 +1,18 @@
+- Difficulty : Easy
+- Topic : Tree, Depth-First Search, Binary Tree, Binary String
+
+- Intuition : 
+    - Sum of every Binary-String can be form from given TREE from ROOT->LEAF
+
+- Approach : 
+    - create a DFS helping function to get the node's valie from ROOT -> LEAF
+    - start the traversing with an EMPTY string
+    - every time MATCH leaf => CALCULATE the result of Binary String using
+        - JavaScrip => `parseInt(BigInt("0b" + str))`
+        - C++       => `stoi(str, nullptr, 2)`
+    - return the ANS
+
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(1)
