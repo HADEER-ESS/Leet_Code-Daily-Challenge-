@@ -1,0 +1,22 @@
+- Difficulty : Easy
+- Topic : Binary String, Bit Manipulation, Hash Table, Array, Sorting, Counting
+
+- Intuition : 
+    - sort the given array of integer by its Binary-String 1's count
+
+- Approach : 
+    - create a MAP `key => 1's count | value => array of integer equivelant` to gather NUMBERS with same binary-string 1's count together
+    - loop through given array 
+        - convert every Integer to its Binary-String equivalent
+        - count the number of 1's at each
+        - Add them to MAP by KEY
+    
+    - sort the MAP data by key
+    - loop through MAP
+        - sort each value and push it back to ANS
+
+    - return ANS
+
+- Complexity :
+    - Time complexity  : O(n log n)
+    - Space complexity : O(n)
