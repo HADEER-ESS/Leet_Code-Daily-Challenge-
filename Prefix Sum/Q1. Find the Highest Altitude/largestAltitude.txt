@@ -1,0 +1,17 @@
+- Difficulty : Easy
+- Topic : Array, Prefix Sum, 
+
+- Intuition : 
+    - get the max value from array after SUM it starting with ZERO
+
+
+- Approach : 
+    - get the GIVEN array length
+    - create ARR array with initial value zeros Array(len+1).fill(0)
+    - loop through GIVEN array, and SUM the currVal with currVal from both array and assigned to formed array currIndex plus one arr[i+1] = arr[i] + gain[i]
+    - get the MAX value from new FORMED array
+    - return MAX
+
+- Complexity :
+    - Time complexity  : O(n)
+    - Space complexity : O(n)
